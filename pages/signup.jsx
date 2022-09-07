@@ -1,16 +1,16 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import React from "react";
+import { useRouter } from "next/router";
 import { FaRegEnvelope } from "react-icons/fa";
 import { MdLockOutline } from "react-icons/md";
 
-const Login = () => {
+const signup = () => {
   const router = useRouter();
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-gray-100 ">
       <Head>
-        <title>Login - Rent & Relax</title>
+        <title>Sign Up - Rent & Relax</title>
       </Head>
 
       <main className="flex items-center justify-center w-full text-center">
@@ -21,9 +21,7 @@ const Login = () => {
               <div className="inline-block">
                 <img src="/logo.png" width={100} />
               </div>
-              <h2 className="text-2xl text-black font-bold mb-4">
-                Login to your Account
-              </h2>
+              <h2 className="text-2xl text-black font-bold mb-4">Sign Up</h2>
               <div className="h-1 w-16  bg-black mb-4 mx-auto"></div>
               <div className="flex flex-col items-center mb-8">
                 <div className="bg-gray-100 m-1 w-80  p-2 flex items-center rounded-md">
@@ -49,7 +47,7 @@ const Login = () => {
                 href=""
                 className="text-yellow border-2 border-yellow rounded-full px-12 py-2 inline-block font-semibold hover:bg-yellow hover:text-white hover:transition-all"
               >
-                Login
+                Sign Up
               </a>
             </div>
           </div>
@@ -59,12 +57,12 @@ const Login = () => {
             <h2 className="text-3xl font-bold mb-2">Hello Friend!</h2>
             <div className="h-1 w-20 bg-white mb-2 inline-block"></div>
             <p className="mb-2">Make renting products easier with us.</p>
-            <p className="mb-8">Don't have an account?</p>
+            <p className="mb-8">Already have an account?</p>
             <button
-              onClick={() => router.push("/signup")}
+              onClick={() => router.push("/login")}
               className="border-2 border-white rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-black hover:transition-all"
             >
-              Sign Up
+              Login
             </button>
           </div>
         </div>
@@ -73,4 +71,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default signup;
