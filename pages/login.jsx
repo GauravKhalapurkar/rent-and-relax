@@ -21,10 +21,10 @@ const Login = () => {
               <div className="inline-block">
                 <img src="/logo.png" width={100} />
               </div>
-              <h2 className="text-2xl text-black font-bold mb-4">
+              <h2 className="text-2xl text-blue font-bold mb-4">
                 Login to your Account
               </h2>
-              <div className="h-1 w-16  bg-black mb-4 mx-auto"></div>
+              <div className="h-1 w-16  bg-blue mb-4 mx-auto"></div>
               <div className="flex flex-col items-center mb-8">
                 <div className="bg-gray-100 m-1 w-80  p-2 flex items-center rounded-md">
                   <FaRegEnvelope className="text-gray-400 m-2" />
@@ -62,7 +62,7 @@ const Login = () => {
             <p className="mb-8">Don't have an account?</p>
             <button
               onClick={() => router.push("/signup")}
-              className="border-2 border-white rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-black hover:transition-all"
+              className="border-2 border-white rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-blue hover:transition-all"
             >
               Sign Up
             </button>
